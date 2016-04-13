@@ -1,0 +1,15 @@
+div {
+    border: 1px #ccc solid;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2); */
+}
+div.left{
+	width: 20%;
+	float: left;
+	margin-left: 20px;
+}
+div.middle{
+	width: 400px;
+}
