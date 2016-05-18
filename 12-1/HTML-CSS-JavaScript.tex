@@ -1,0 +1,43 @@
+%!TEX program = xelatex
+% 使用XeLaTeX编译引擎，方便utf-8编码
+
+\documentclass[oneside,UTF8,zihao=-4]{ctexbook}
+% 设定文档类型为book，同时设定默认字体为小四。
+\input{../public/preamble}
+% 载入配置文件
+\begin{document}
+
+\frontmatter % 开始前言目录，页码用罗马数字
+
+\title{网页设计与制作课程教案}
+\author{杨志宏\thanks{西北民族大学新闻传播学院副教授，Email：yangjh@yeah.net。}}
+\date{\today}
+
+\maketitle
+
+\tableofcontents
+
+\mainmatter % 开始正文，页码用阿拉伯数字
+% \part{HTML5}
+\include{HowToLearn/HowToLearn}
+\include{HTML/Web-standard}
+\include{HTML/HTML}
+\include{CSS/CSS}
+\include{JavaScript/JavaScript}
+\include{jQuery/jQuery}
+% \include{AJAX}
+\include{BootStrap/Bootstrap}
+\appendix
+% 分布式版本控制软件Git的使用
+\include{Git/Git}
+% sublime text 文本编辑器的使用
+\include{SublimeText/SublimeText}
+% JavaScript保留字
+\include{JavaScript/JavaScript-Reserved-Words}
+% \include{.htaccess} apache访问权限控制文件配置
+% utf8编码
+
+% 附加材料
+\backmatter
+\bibliography{../bib/yangjh}
+\end{document}
